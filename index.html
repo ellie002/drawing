@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+    <link href="css/style.css" type="text/css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+    <div class="field">
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+            <button type="button" class="button">UNDO</button>
+            <button onClick="clear_canvas()" type="button" class="button">CLEAR</button>
+           
+            <div onClick="change_color(this)" class="color-field" style="background: black;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(34, 14, 0);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(5, 5, 255);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(189, 0, 0);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(128, 99, 19);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(22, 63, 29);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(255, 157, 173);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(255, 225, 92);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(124, 94, 192);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(228, 205, 149);"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: rgb(27, 255, 187);"></div>
+
+            <input onInput="draw_color = this.value" type="color" class="color-picker">
+            <input onInput="draw_width = this.value" type="range" min="1" max="50" class="pen-range">
+        </div>
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+</html>
