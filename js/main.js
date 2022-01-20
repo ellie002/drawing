@@ -1,6 +1,15 @@
+const splash = document.querySelector('.splash');
+
+document.addEventListener('DOMContentLoaded', e=>{
+    setTimeout(()=>{
+        splash.classList.add('display-none');
+    }, 2000);
+})
+
+
 const canvas = document.getElementById("canvas");
 canvas.width = window.innerWidth - 60;
-canvas.height = 400;
+canvas.height = 600;
 
 let context = canvas.getContext("2d");
 let start_background_color = "white";
